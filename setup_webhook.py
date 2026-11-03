@@ -11,7 +11,7 @@ import os
 import requests
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN") or input("Enter your BOT_TOKEN: ").strip()
-BOT_URL = os.environ.get("BOT_URL", "https://bot.hakshay.engineer").rstrip("/")
+BOT_URL = os.environ.get("BOT_URL", "https://agent.hakshay.engineer").rstrip("/")
 
 WEBHOOK_URL = f"{BOT_URL}/api/webhook"
 TELEGRAM_API = f"https://api.telegram.org/bot{BOT_TOKEN}"
